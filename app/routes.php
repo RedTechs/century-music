@@ -11,6 +11,7 @@
 |
 */
 
+<<<<<<< HEAD
 Route::get('/', function()
 {
 	return View::make('hello');
@@ -19,3 +20,14 @@ Route::get('/', function()
 Route::resource('products', 'ProductsController');
 
 Route::resource('users', 'UsersController');
+=======
+// Route::get('/', function()
+// {
+// 	return View::make('hello');
+// });
+
+Route::get('/', function()
+{
+	return View::make('home');
+});
+>>>>>>> 6188d4ccc220b32b957d66257c2b0c314359ec35

@@ -24,12 +24,19 @@ $app = new Illuminate\Foundation\Application;
 |
 */
 
+<<<<<<< HEAD
 $env = $app->detectEnvironment(array(
 
 	'local' => array('homestead'),
 
 ));
 
+=======
+$env = $app->detectEnvironment(function()
+{
+    return isset($_SERVER['LARAVEL_ENV']) ? $_SERVER['LARAVEL_ENV'] : 'production';
+});
+>>>>>>> 6188d4ccc220b32b957d66257c2b0c314359ec35
 /*
 |--------------------------------------------------------------------------
 | Bind Paths
