@@ -1,1 +1,0 @@
-/vagrant/sites/century-music.dev/app/views/users/index.blade.php

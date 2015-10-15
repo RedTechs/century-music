@@ -12,12 +12,14 @@
 */
 
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+// Route::get('/', function()
+// {
+// 	return View::make('hello');
+// });
 
 Route::resource('products', 'ProductsController');
 
 Route::resource('users', 'UsersController');
+
+Route::get('home', 'HomeController@showHome');
 
