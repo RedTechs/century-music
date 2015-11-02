@@ -7,6 +7,22 @@ class ProductsController extends \BaseController {
 	 *
 	 * @return Response
 	 */
+
+	public function showGuitar()
+	{
+		return View::make('guitar');
+	}
+
+	public function showAmp()
+	{
+		return View::make('amp');
+	}
+
+	public function showBass()
+	{
+		return View::make('bass');
+	}
+
 	public function index()
 	{
 		$products = Product::all();
