@@ -23,3 +23,10 @@ Route::resource('users', 'UsersController');
 
 Route::get('home', 'HomeController@showHome');
 
+Route::get('guitar', 'ProductsController@showGuitar');
+
+Route::get('bass', 'ProductsController@showBass');
+
+Route::get('amp', 'ProductsController@showAmp');
+
+
